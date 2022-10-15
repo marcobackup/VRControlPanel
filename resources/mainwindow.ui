@@ -32,7 +32,8 @@
    <string>VR control panel</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: rgb(255, 97, 22);</string>
+   <string notr="true">background: rgb(56, 56, 56);
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -46,76 +47,105 @@
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="1" rowspan="2">
-        <widget class="QGroupBox" name="groupBox_3">
+        <widget class="QGroupBox" name="roverTelemetryBox">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox { 
+	background: rgb(36, 35, 35);
+}
+</string>
+         </property>
          <property name="title">
           <string>Rover telemetry</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_11">
           <item>
            <widget class="QLabel" name="label_12">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 4px;
+padding: 4px;
+background: rgb(56, 56, 56);</string>
+            </property>
             <property name="text">
              <string>Velocity:</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="velocityParam">
             <property name="styleSheet">
              <string notr="true">background: none;</string>
             </property>
             <property name="text">
-             <string>1.2</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;0.0 m/s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_11">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 4px;
+padding: 4px;
+background: rgb(56, 56, 56);</string>
+            </property>
             <property name="text">
              <string>Steering angle:</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="steeringAngleParam">
             <property name="styleSheet">
              <string notr="true">background: none;</string>
             </property>
             <property name="text">
-             <string>12.2</string>
+             <string>&lt;strong&gt;0.0°&lt;/strong&gt;</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 4px;
+padding: 4px;
+background: rgb(56, 56, 56);</string>
+            </property>
             <property name="text">
              <string>Orientation:</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="orientationParam">
             <property name="styleSheet">
              <string notr="true">background: none;</string>
             </property>
             <property name="text">
-             <string>&lt;strong&gt;23.3&lt;/strong&gt;</string>
+             <string>&lt;strong&gt;0.0&lt;/strong&gt;</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_9">
+            <property name="styleSheet">
+             <string notr="true">border-radius: 4px;
+padding: 4px;
+background: rgb(56, 56, 56);</string>
+            </property>
             <property name="text">
              <string>Probes:</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_8">
+           <widget class="QLabel" name="probesParam">
             <property name="styleSheet">
              <string notr="true">background: none;</string>
             </property>
             <property name="text">
-             <string>&lt;strong&gt;2&lt;/strong&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -123,115 +153,160 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QGroupBox" name="groupBox_2">
+        <widget class="QGroupBox" name="LMAOInterfaceBox">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox { 
+	background: rgb(36, 35, 35);
+}
+</string>
+         </property>
          <property name="title">
           <string>LMAO interface</string>
          </property>
-         <widget class="QWidget" name="">
-          <property name="geometry">
-           <rect>
-            <x>15</x>
-            <y>30</y>
-            <width>262</width>
-            <height>79</height>
-           </rect>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_2">
-           <item row="0" column="0">
-            <widget class="QLabel" name="label">
-             <property name="font">
-              <font>
-               <pointsize>11</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background: none;</string>
-             </property>
-             <property name="text">
-              <string>Velocity:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="label_13">
-             <property name="font">
-              <font>
-               <pointsize>11</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background: none;</string>
-             </property>
-             <property name="text">
-              <string>Steering angle</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLineEdit" name="lineEdit_2"/>
-           </item>
-           <item row="1" column="1">
-            <widget class="QLineEdit" name="lineEdit_3"/>
-           </item>
-           <item row="2" column="0" colspan="2">
-            <widget class="QPushButton" name="pushButton_2">
-             <property name="text">
-              <string>send</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_13">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background: none;</string>
+              </property>
+              <property name="text">
+               <string>Steering angle: (-42°, +42°)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QDoubleSpinBox" name="velocityAmount">
+              <property name="suffix">
+               <string> m/s</string>
+              </property>
+              <property name="decimals">
+               <number>3</number>
+              </property>
+              <property name="minimum">
+               <double>-1.490000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>1.490000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="steeringAngleAmount">
+              <property name="suffix">
+               <string>°</string>
+              </property>
+              <property name="minimum">
+               <double>-41.899999999999999</double>
+              </property>
+              <property name="maximum">
+               <double>41.899999999999999</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QPushButton" name="publishBtn">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-radius: 4px;
+padding: 4px;
+background: rgb(56, 56, 56);
+</string>
+              </property>
+              <property name="text">
+               <string>publish</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background: none;</string>
+              </property>
+              <property name="text">
+               <string>Velocity: (-1.5, +1.5)</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
         </widget>
        </item>
        <item row="0" column="0">
         <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox { 
+	background: rgb(36, 35, 35);
+}
+</string>
+         </property>
          <property name="title">
           <string>MQTT settings</string>
          </property>
-         <widget class="QLabel" name="label_14">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>20</y>
-            <width>191</width>
-            <height>16</height>
-           </rect>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>11</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background: none;</string>
-          </property>
-          <property name="text">
-           <string>Broker address: &lt;ip:port&gt;</string>
-          </property>
-         </widget>
-         <widget class="QWidget" name="">
-          <property name="geometry">
-           <rect>
-            <x>15</x>
-            <y>36</y>
-            <width>161</width>
-            <height>71</height>
-           </rect>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_3">
-           <item row="1" column="0">
-            <widget class="QPushButton" name="MQTTConnectBtn">
-             <property name="text">
-              <string>connect</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
-            <widget class="QLineEdit" name="MQTTAddress"/>
-           </item>
-          </layout>
-         </widget>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: none;</string>
+            </property>
+            <property name="text">
+             <string>Broker address: &lt;ip:port&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="1" column="0">
+             <widget class="QPushButton" name="MQTTConnectBtn">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 4px;	
+padding: 4px;
+background: rgb(56, 56, 56);
+</string>
+              </property>
+              <property name="text">
+               <string>connect</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLineEdit" name="MQTTAddress">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 4px;
+padding: 2px;
+background: rgb(56, 56, 56);
+color: white;</string>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
@@ -252,7 +327,7 @@
     <property name="title">
      <string>About</string>
     </property>
-    <addaction name="actionabout"/>
+    <addaction name="actioninfo"/>
    </widget>
    <addaction name="menuAbout"/>
   </widget>
@@ -265,6 +340,26 @@
   <action name="actionabout">
    <property name="text">
     <string>about</string>
+   </property>
+  </action>
+  <action name="actionHello">
+   <property name="text">
+    <string>Hello</string>
+   </property>
+  </action>
+  <action name="actionabout_2">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="actionabout_3">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="actioninfo">
+   <property name="text">
+    <string>info</string>
    </property>
   </action>
  </widget>
