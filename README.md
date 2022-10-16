@@ -5,7 +5,7 @@
 ### Control panel
 ![image](https://github.com/marcobackup/VRControlPanel/blob/main/docs/main%20window.png?raw=true)
 
-### How to start
+### How to use
 - Install python3.9, pipenv and initialize virtual environment in main root (VRControlPanel/)
 > pip install pipenv
 
