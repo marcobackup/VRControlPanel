@@ -219,10 +219,15 @@ background: rgb(56, 56, 56);</string>
                <bool>false</bool>
               </property>
               <property name="styleSheet">
-               <string notr="true">border-radius: 4px;
-padding: 4px;
-background: rgb(56, 56, 56);
-</string>
+               <string notr="true">QPushButton {
+	border-radius: 4px;
+	padding: 4px;
+	background: rgb(56, 56, 56);
+}
+
+QPushButton::pressed {
+	background: transparent;
+}</string>
               </property>
               <property name="text">
                <string>publish</string>
@@ -281,10 +286,15 @@ background: rgb(56, 56, 56);
             <item row="1" column="0">
              <widget class="QPushButton" name="MQTTConnectBtn">
               <property name="styleSheet">
-               <string notr="true">border-radius: 4px;	
-padding: 4px;
-background: rgb(56, 56, 56);
-</string>
+               <string notr="true">QPushButton {
+	border-radius: 4px;
+	padding: 4px;
+	background: rgb(56, 56, 56);
+}
+
+QPushButton::pressed {
+	background: transparent;
+}</string>
               </property>
               <property name="text">
                <string>connect</string>
@@ -320,7 +330,7 @@ color: white;</string>
      <x>0</x>
      <y>0</y>
      <width>650</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAbout">
